@@ -27,7 +27,7 @@ install_pkg <- function(pkg = ".", ...) {
   opts <- "--install-tests"
 
   ## dependencies
-  print_start("Checking dependencies...")
+  tfse::print_start("Checking dependencies...")
   remotes::install_deps(
     pkg$path,
     build = TRUE,
@@ -179,7 +179,7 @@ document_pkg <- function(pkg = ".", roclets = NULL) {
     roxygen2::roxygenise(pkg$path, roclets)
   ))
   pkgload::dev_topic_index_reset(pkg$package)
-  print_complete("Updated ", pkg$package, " documentation...")
+  tfse::print_complete("Updated ", pkg$package, " documentation...")
   invisible()
 }
 

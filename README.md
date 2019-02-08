@@ -1,12 +1,6 @@
----
-output: github_document
----
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-```{r setup, include = FALSE}
-knitr::opts_chunk$set(echo = TRUE, collapse = TRUE, comment = "#>")
-```
 # lkg
 
 <!--[![Build status](https://travis-ci.org/mkearney/lkg.svg?branch=master)](https://travis-ci.org/mkearney/lkg)
@@ -15,6 +9,7 @@ knitr::opts_chunk$set(echo = TRUE, collapse = TRUE, comment = "#>")
 
 #![Downloads](https://cranlogs.r-pkg.org/badges/lkg)
 #![Downloads](https://cranlogs.r-pkg.org/badges/grand-total/lkg)-->
+
 [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 
 > Tools for installing, loading, and building package libraries.

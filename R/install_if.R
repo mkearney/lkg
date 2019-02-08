@@ -63,6 +63,6 @@ install_pkg_verbose <- function(pkg) {
     verbose = FALSE, type = type),
     error = function(e) NULL)
   msg <- sprintf("Installing {%s}", pkg)
-  msg <- paste0(msg, paste(rep(" ", 15 - (nchar(pkg) %/% 2) * 2), collapse = ""))
+  if ((nchar(msg) %/% 2) == 1) msg <- paste0(msg, " ")
   task_progress_bar(invisible(), msg)
 }
